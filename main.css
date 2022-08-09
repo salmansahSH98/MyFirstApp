@@ -1,0 +1,197 @@
+
+  
+    * {
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 50px;
+      background-color: #cbcfde;
+      height: 100vh;
+      font-family: sans-serif;
+    }
+
+    .app {
+      width: 60%;
+    }
+
+    @media (max-width:768px) {
+      .app {
+        width: 60%;
+      }
+    }
+
+    .app .head{
+      display: flex;
+      width: 100%;
+      background-color: #374151;
+    }
+    .app h1 {
+      width: 80%;
+      color: white;
+      font-size: 40px;
+      padding: 10px 0;
+      text-align: center;
+      border-radius: .5rem .5rem 0 0;
+      background-color: #374151;
+      font-family: "Rajdhani", sans-serif;
+    }
+    .app .head #clear{
+      position:relative;
+      padding-top: 2%;
+      border-radius: 1rem;
+      color: white;
+      text-align: center;
+      background-color: #1dd2af;
+      font-size: 20px;
+      width: 20%;
+      float: right;
+      height: 50px;
+    }
+    .app .head #clear:hover{
+      cursor: pointer;
+      background-color: #374151;
+    }
+    .app form {
+      display: flex;
+      width: 100%;
+      background-color: #374151;
+    }
+
+    .app form input {
+      border-radius: 1rem;
+      background-color: #3a4674;
+      font-size: 18px;
+      color: white;
+      padding: 10px;
+      width: 90%;
+      
+    }
+     
+
+    .app form button {
+      border: none;
+      color: white;
+      background-color: #1dd2af;
+      font-size: 25px;
+      font-weight: 600;
+      height: 42px;
+      width: 10%;
+    }
+
+    .app form button:hover{
+        opacity: 0.8;
+        background-color: #374151;
+    }
+    .app ul {
+      list-style: none;
+      color: #e0e0e0;
+      padding: 0;
+    }
+    .app ul li {
+
+     display: flex;
+	justify-content: space-between;
+	background-color: #1F2937;
+	padding: 1rem;
+	border-radius: 1rem;
+	margin-bottom: 1rem;
+    margin-top: 0.5rem;
+    }
+    .app ul li.task{
+    color: #EEE;
+	font-size: 1.125rem;
+	width: 100%;
+	display: block;
+	transition: 0.4s;
+    
+    }
+    .app ul li.task:not(:read-only){
+        color: #EC4899;
+    }
+
+
+    .app ul li button{
+        display: flex;
+        cursor: pointer;
+	margin: 0 0.5rem;
+	font-size: 1.125rem;
+	font-weight: 500;
+	text-transform: uppercase;
+	transition: 0.4s;
+    }
+    .app ul li button:hover{
+        opacity: 0.8;
+    }
+    .app ul li button:active{
+        opacity: 0.6;
+    }
+    .app ul li button.done{
+        color: rgb(230, 247, 239);
+    }
+    .app ul li button.edit{
+        color: green;
+    }
+    .app ul li button.delate{
+        color: crimson;
+    }
+
+     .app ul li {
+      padding: 20px;
+      background-color: #262e4c;
+    } 
+
+     button {
+        margin: 20px;
+        appearance: none;
+        border: none;
+        outline: none;
+        background: none;
+    } 
+
+    .check {
+      width: 0.8em;
+      height: 0.8em;
+      cursor: pointer;
+      border-radius: 50%;
+      background-color: white;
+      border: 1px solid rgb(255, 255, 255);
+      -webkit-appearance: none;
+    }
+
+    .check:checked {
+      background-color: #1dd2af;
+    }
+
+    .task {
+      font-size: 18px;
+      padding: 0 10px;
+      width: fit-content;
+      background: transparent;
+      border: none;
+      color: #fff;
+    }
+
+    .task:focus {
+      outline: none;
+    }
+
+    .app ul li i {
+      float: right;
+      cursor: pointer;
+    }
+
+    .app ul li i:hover {
+      color: rgb(255, 82, 82);
+    }
+
+    .completed {
+      color: rgba(192, 192, 192, 0.8);
+      text-decoration: line-through;
+    }
+
+   
